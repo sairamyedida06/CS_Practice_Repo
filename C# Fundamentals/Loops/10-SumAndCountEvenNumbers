@@ -1,0 +1,11 @@
+int sum = 0;
+int count = 0;
+
+for (int i = 2; i <= 10; i += 2)
+{
+    sum += i;
+    count++;
+}
+
+Console.WriteLine("Sum = " + sum);
+Console.WriteLine("Count = " + count);
