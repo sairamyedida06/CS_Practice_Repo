@@ -1,0 +1,14 @@
+int number = 2;
+
+if (number > 0)
+{
+    System.Console.WriteLine("Positive");
+}
+ else if (number < 0)
+{
+    System.Console.WriteLine("Negative");
+}
+else
+{
+    System.Console.WriteLine("Zero");
+}
