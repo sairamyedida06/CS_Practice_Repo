@@ -1,0 +1,23 @@
+
+int[] numbers = { 12, 25, 36, 48, 59 };
+int searchNumber = 36;
+
+bool found = false;
+
+for (int i = 0; i < numbers.Length; i++)
+{
+    if(numbers[i] == searchNumber)
+    {
+        found = true; 
+    }
+
+    
+}
+if (found)
+{
+    Console.WriteLine(searchNumber + " Found");
+}
+else
+{
+    Console.WriteLine(searchNumber + " Not Found");
+}
