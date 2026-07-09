@@ -1,0 +1,28 @@
+int[] numbers = { 5, 8, 6 };
+
+int smallest = numbers[0];
+int secondSmallest = int.MaxValue;
+
+for (int i = 1; i < numbers.Length; i++)
+{
+    if (numbers[i] < smallest)
+    {
+        secondSmallest = smallest;
+        smallest = numbers[i];
+    }
+    else if (numbers[i] > smallest &&  numbers[i] < secondSmallest)
+    {
+        secondSmallest = numbers[i];
+    }
+
+}
+if (smallest == secondSmallest)
+{
+    Console.WriteLine(" All the elements in the Array have same value");
+}
+else
+{
+    Console.WriteLine($"smallest = {smallest}");
+    Console.WriteLine($"Second smallest = {secondSmallest}");
+
+}
